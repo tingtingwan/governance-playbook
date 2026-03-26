@@ -92,6 +92,42 @@ SELECT * FROM ${catalog}.${schema}.client_documents ORDER BY doc_id;
 -- COMMAND ----------
 
 -- MAGIC %md
+-- MAGIC %md
+-- MAGIC ## Data Lineage
+-- MAGIC Unity Catalog tracks lineage automatically — who accessed what, when, and what was derived.
+
+-- COMMAND ----------
+
+-- Show table lineage (column-level tracking)
+-- This shows the flow: raw data → governed tables → downstream queries
+DESCRIBE DETAIL ${catalog}.${schema}.client_documents;
+
+-- COMMAND ----------
+
+-- MAGIC %md
+-- MAGIC ## Audit: Who Accessed Governed Data?
+-- MAGIC System tables capture every access attempt — including masked/filtered queries.
+-- MAGIC This is critical for regulatory compliance (MiFID II, GDPR, DORA audit requirements).
+
+-- COMMAND ----------
+
+-- Query audit logs for access to governance demo tables
+-- NOTE: system.access.audit may take a few minutes to populate after queries run
+SELECT
+  event_time,
+  user_identity.email as user,
+  action_name,
+  request_params.full_name_arg as table_accessed,
+  response.status_code
+FROM system.access.audit
+WHERE request_params.full_name_arg LIKE '${catalog}.${schema}.%'
+  AND event_time > current_timestamp() - INTERVAL 1 HOUR
+ORDER BY event_time DESC
+LIMIT 20;
+
+-- COMMAND ----------
+
+-- MAGIC %md
 -- MAGIC ## Setup Complete
 -- MAGIC
 -- MAGIC | Table | Purpose |
@@ -100,3 +136,8 @@ SELECT * FROM ${catalog}.${schema}.client_documents ORDER BY doc_id;
 -- MAGIC | `client_documents_masked` | Column masking demo |
 -- MAGIC | `client_documents_filtered` | Row filtering demo |
 -- MAGIC | `client_documents_governed` | Both masking + filtering |
+-- MAGIC
+-- MAGIC **Governance features demonstrated:**
+-- MAGIC - Column tags for PII classification
+-- MAGIC - Data lineage tracked in Unity Catalog
+-- MAGIC - Access audit trail via system tables

@@ -54,22 +54,46 @@ A sub-fund of European Investment SICAV
 ISIN: LU0292096186
 Management Company: FundCo Asset Management S.A.
 
-Risk Indicator: 5 out of 7
+Objectives and Investment Policy
+The fund aims to achieve long-term capital growth by investing primarily in global
+equities. The fund may invest up to 20% in emerging markets. The fund uses a
+benchmark-aware strategy tracking the MSCI World Index. Minimum recommended holding
+period: 5 years. Income is reinvested.
+
+Risk and Reward Profile
+Risk Indicator: 5 out of 7 (Medium-High Risk)
+Historical returns do not guarantee future performance. The risk category shown is
+not guaranteed and may shift over time. The lowest category does not mean risk-free.
+
+Charges
+Entry charge: 5.00% (maximum)
+Exit charge: 0.00%
 Ongoing charges: 1.45% per annum
 Performance fee: None
-Entry charge: 5.00%
+The charges you pay are used to pay the costs of running the fund, including
+marketing and distribution costs. These charges reduce potential growth.
 
-Past Performance: 2023: +14.2%  2022: -8.7%  2021: +22.1%
+Past Performance
+2023: +14.2%  2022: -8.7%  2021: +22.1%  2020: +6.3%  2019: +18.9%
+Performance is calculated after deduction of ongoing charges. Past performance
+is not a reliable indicator of future results.
 
+Practical Information
 Depositary: Northern Trust Luxembourg S.A.
-Date of Publication: 15 January 2024""",
+Auditor: PricewaterhouseCoopers S.a.r.l.
+Regulator: Commission de Surveillance du Secteur Financier (CSSF)
+Country of Registration: Luxembourg
+Date of Publication: 15 January 2024
+This fund is authorised in Luxembourg and regulated by the CSSF.""",
         "expected_facts": [
             "Fund name is Global Equity Growth Fund",
             "ISIN is LU0292096186",
             "Risk rating is 5",
             "Ongoing charges are 1.45%",
             "Publication date is 2024-01-15 or 15 January 2024",
-            "Management company is FundCo Asset Management S.A."
+            "Management company is FundCo Asset Management S.A.",
+            "Entry charge is 5.00%",
+            "Country of registration is Luxembourg"
         ]
     },
     {
@@ -78,22 +102,51 @@ Date of Publication: 15 January 2024""",
         "parsed_text": """Fund Factsheet - Euro Corporate Bond Fund
 As at 29 February 2024
 
+Fund Details
 ISIN: IE00BK5BQT80
 Fund Manager: EuroBond Capital Management Ltd
 Fund Size: EUR 2.4 billion
+Base Currency: EUR
+Launch Date: 15 March 2018
+Benchmark: Bloomberg Euro Aggregate Corporate Index
 Risk Rating: 3 out of 7
 Ongoing Charges (OCF): 0.85%
+Distribution Frequency: Semi-annual
 SFDR Classification: Article 8
-Launch Date: 15 March 2018
 
-Performance: Fund YTD +1.2%, 1Y +4.8%, 3Y -2.1%""",
+Investment Objective
+The fund aims to provide income and capital appreciation through investment in
+Euro-denominated investment grade corporate bonds. The fund targets bonds rated
+BBB- or above by at least one major rating agency. Maximum portfolio duration: 8 years.
+
+Performance (%)
+            YTD    1Y     3Y     5Y     Since Inception
+Fund        +1.2   +4.8   -2.1   +1.5   +12.3
+Benchmark   +1.0   +4.5   -2.8   +1.1   +10.8
+
+Top 10 Holdings
+1. Deutsche Bank AG 2.75% 2028 - 3.2%
+2. BNP Paribas SA 3.125% 2029 - 2.8%
+3. Volkswagen AG 2.625% 2027 - 2.5%
+4. Total Energies SE 1.875% 2026 - 2.3%
+5. Siemens AG 2.0% 2030 - 2.1%
+6. Enel SpA 3.5% 2028 - 1.9%
+7. Telefonica SA 2.375% 2027 - 1.8%
+8. BMW Finance NV 2.25% 2029 - 1.7%
+9. Danone SA 1.75% 2026 - 1.6%
+10. Schneider Electric 2.5% 2030 - 1.5%
+
+Sector Allocation: Financials 32%, Industrials 24%, Utilities 15%, Consumer 14%, TMT 10%, Other 5%
+Credit Rating: AAA 2%, AA 8%, A 45%, BBB 42%, Sub-IG 3%""",
         "expected_facts": [
             "Fund name is Euro Corporate Bond Fund",
             "ISIN is IE00BK5BQT80",
             "Risk rating is 3",
             "Ongoing charges are 0.85%",
             "SFDR classification is Article 8",
-            "Fund manager is EuroBond Capital Management Ltd"
+            "Fund manager is EuroBond Capital Management Ltd",
+            "Base currency is EUR",
+            "Fund size is EUR 2.4 billion"
         ]
     },
     {
@@ -101,22 +154,40 @@ Performance: Fund YTD +1.2%, 1Y +4.8%, 3Y -2.1%""",
         "doc_type": "Trade Confirmation",
         "parsed_text": """TRADE CONFIRMATION - CONFIDENTIAL
 
+Transaction Details
 Trade Reference: TC-2024-FX-00847291
 Trade Date: 05 March 2024
-Settlement Date: 07 March 2024
+Settlement Date: 07 March 2024 (T+2)
 Transaction Type: FX Forward
 Direction: BUY
 
+Client Information
 Client Name: David Park
+Client ID: CLI-US-20198
+Account Number: US-TRD-006789
 Client Email: d.park@us-advisory.com
+Client Phone: +1-212-555-0199
 Jurisdiction: United States
 
+Instrument Details
 Instrument: EUR/USD FX Forward 3M
 Notional Amount: EUR 500,000.00
 Forward Rate: 1.0842
+USD Equivalent: USD 542,100.00
+Maturity Date: 05 June 2024
 
+Fees and Charges
+Commission: EUR 250.00
+Spread Cost: EUR 125.00
+Total Charges: EUR 375.00
+
+Compliance
 MiFID II Classification: Professional Client
-Compliance Status: Approved""",
+Best Execution: Confirmed - venue: EBS
+LEI: 529900HNOAA1KXQJUQ27
+Compliance Status: Approved
+
+This confirmation is subject to the terms of the ISDA Master Agreement.""",
         "expected_facts": [
             "Trade reference is TC-2024-FX-00847291",
             "Trade date is 2024-03-05 or 05 March 2024",
@@ -124,7 +195,32 @@ Compliance Status: Approved""",
             "Client name is David Park",
             "Notional amount is EUR 500,000",
             "Jurisdiction is United States",
-            "Compliance status is Approved"
+            "Compliance status is Approved",
+            "Total charges are EUR 375.00"
+        ]
+    },
+    {
+        # INTENTIONAL FAILURE CASE: Poorly scanned document with OCR errors
+        # This tests whether the judges catch hallucination and low-confidence extraction
+        "doc_id": "SCAN-001",
+        "doc_type": "Poor Quality Scan",
+        "parsed_text": """K3y Inv3stor Informat1on D0cument
+
+Gl0bal Equ1ty Gr0wth... [illegible]
+A sub-fund of Eur0pean Inv3stment S1CAV
+IS1N: LU029209... [truncated]
+Manag3ment C0mpany: [illegible]
+
+R1sk Ind1cator: [smudged] out of 7
+Ongo1ng charges: 1.4...% [partially visible]
+
+Date of Publ1cation: [illegible] 2024""",
+        "expected_facts": [
+            "Fund name is Global Equity Growth Fund",
+            "ISIN is LU0292096186",
+            "Risk rating is 5",
+            "Ongoing charges are 1.45%",
+            "Management company is FundCo Asset Management S.A."
         ]
     }
 ]
@@ -137,6 +233,10 @@ Compliance Status: Approved""",
 # COMMAND ----------
 
 prompt_versions = {
+    "v0_naive": """Extract data from this document:
+
+{{doc_text}}""",
+
     "v1_basic": """Extract fields from this document. Return JSON with keys: fund_name, isin, risk_rating, ongoing_charges, doc_date.
 If a field is not found, use null.
 
@@ -161,6 +261,17 @@ Return ONLY valid JSON. Use null for missing fields.
 Document:
 {{doc_text}}"""
 }
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC **Three prompt versions:**
+# MAGIC - `v0_naive` — zero prompt engineering (baseline). Shows what happens without investment.
+# MAGIC - `v1_basic` — minimal structure. Tells the LLM what fields to extract.
+# MAGIC - `v2_detailed` — full specification with format hints, role context, and more fields.
+# MAGIC
+# MAGIC **One intentional failure case** (`SCAN-001`) — poorly scanned document with OCR errors.
+# MAGIC This tests whether the judges catch hallucination from corrupted input.
 
 # COMMAND ----------
 
