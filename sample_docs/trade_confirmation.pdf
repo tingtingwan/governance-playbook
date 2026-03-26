@@ -1,0 +1,103 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1360 >>
+stream
+BT
+/F1 16 Tf
+50 750 Td
+(TRADE CONFIRMATION - CONFIDENTIAL) Tj
+/F1 10 Tf
+/F1 12 Tf
+50 706 Td
+(Transaction Details) Tj
+/F1 10 Tf
+50 692 Td
+(Trade Reference: TC-2024-FX-00847291) Tj
+50 678 Td
+(Trade Date: 05 March 2024) Tj
+50 664 Td
+(Settlement Date: 07 March 2024 \\\(T+2\\\)) Tj
+50 650 Td
+(Transaction Type: FX Forward) Tj
+50 636 Td
+(Direction: BUY) Tj
+/F1 12 Tf
+50 608 Td
+(Client Information) Tj
+/F1 10 Tf
+50 594 Td
+(Client Name: David Park) Tj
+50 580 Td
+(Client ID: CLI-US-20198) Tj
+50 566 Td
+(Account Number: US-TRD-006789) Tj
+50 552 Td
+(Client Email: d.park@us-advisory.com) Tj
+50 538 Td
+(Client Phone: +1-212-555-0199) Tj
+50 524 Td
+(Jurisdiction: United States) Tj
+/F1 12 Tf
+50 496 Td
+(Instrument Details) Tj
+/F1 10 Tf
+50 482 Td
+(Instrument: EUR/USD FX Forward 3M) Tj
+50 468 Td
+(Notional Amount: EUR 500,000.00) Tj
+50 454 Td
+(Forward Rate: 1.0842) Tj
+50 440 Td
+(USD Equivalent: USD 542,100.00) Tj
+50 426 Td
+(Maturity Date: 05 June 2024) Tj
+/F1 12 Tf
+50 398 Td
+(Fees and Charges) Tj
+/F1 10 Tf
+50 384 Td
+(Commission: EUR 250.00) Tj
+50 370 Td
+(Spread Cost: EUR 125.00) Tj
+50 356 Td
+(Total Charges: EUR 375.00) Tj
+/F1 12 Tf
+50 328 Td
+(Compliance) Tj
+/F1 10 Tf
+50 314 Td
+(MiFID II Classification: Professional Client) Tj
+50 300 Td
+(Best Execution: Confirmed - venue: EBS) Tj
+50 286 Td
+(LEI: 529900HNOAA1KXQJUQ27) Tj
+50 272 Td
+(Compliance Status: Approved) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001653 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1723
+%%EOF
