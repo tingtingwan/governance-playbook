@@ -51,6 +51,33 @@ Use schema-level isolation — one schema per customer:
 2. **Prompt Registry** (5 min): Show Catalog Explorer Prompts tab → run 05 → promote staging to production
 3. **LLM Evaluation** (5 min): Run 04 → show judge scores in MLflow Experiment UI
 
+## Databricks App
+
+The repo also includes a full-stack **Databricks App** (`app.yaml` + `backend/` + `frontend/`) that wraps all the above into an interactive UI:
+
+| Tab | What it does |
+|-----|-------------|
+| 1. Parse Document | Upload & parse PDFs via `ai_parse_document` |
+| 2. Extract & Compare | Run production vs staging prompts side-by-side |
+| 3. Prompt Management | View MLflow Prompt Registry versions, promote aliases |
+| 4. Governed Access | Compliance vs analyst view — same table, ABAC-enforced |
+| 5. Evaluation | LLM judge scores from MLflow experiments |
+
+### Deploy the App
+
+```bash
+databricks apps create governance-demo --app-yaml app.yaml
+databricks apps deploy governance-demo
+```
+
+### Run Locally
+
+```bash
+pip install -r requirements.txt
+export DATABRICKS_PROFILE=your-profile
+uvicorn backend.main:app --reload --port 8000
+```
+
 ## Tested On
 
 - FEVM serverless workspace (AWS us-east-1)

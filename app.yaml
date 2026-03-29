@@ -1,0 +1,19 @@
+command:
+  - uvicorn
+  - backend.main:app
+  - --host
+  - "0.0.0.0"
+  - --port
+  - "8000"
+
+env:
+  - name: DATABRICKS_HOST
+    valueFrom: "{resources.serving_endpoint.host}"
+  - name: DATABRICKS_TOKEN
+    valueFrom: "{resources.serving_endpoint.token}"
+
+resources:
+  - name: serving_endpoint
+    serving_endpoint:
+      name: databricks-claude-sonnet-4
+      permission: CAN_QUERY

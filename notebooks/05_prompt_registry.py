@@ -1,5 +1,5 @@
 # Databricks notebook source
-# the customer: Prompt Registry Demo
+# Governance Demo: Prompt Registry
 # Shows how to version, manage, and deploy extraction prompts via MLflow Prompt Registry
 
 # COMMAND ----------
@@ -7,7 +7,7 @@
 # MAGIC %md
 # MAGIC # Prompt Registry for Document Extraction
 # MAGIC
-# MAGIC **the customer's ask:** Business users want to iterate on extraction prompts
+# MAGIC **The ask:** Business users want to iterate on extraction prompts
 # MAGIC without a full sprint cycle. The Prompt Registry gives them:
 # MAGIC
 # MAGIC 1. **Version control** for prompts (like Git for prompts)
@@ -72,7 +72,7 @@ print(f"Registered: {v1.name} v{v1.version}")
 
 v2 = mlflow.genai.register_prompt(
     name=PROMPT_NAME,
-    template="""You are a fund data extraction specialist at the customer.
+    template="""You are a fund data extraction specialist.
 Extract structured data from the following parsed fund document.
 
 Required fields:
@@ -149,7 +149,7 @@ test_doc = """
 Key Investor Information
 FE Global Equity Fund
 ISIN: GB00B1XFGM25
-Management Company: the customer Investment Management Ltd
+Management Company: EuroBond Capital Management Ltd
 
 Risk Indicator: 5 out of 7
 Ongoing charges: 1.45%
@@ -250,7 +250,7 @@ for p in prompts:
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## What This Means for the customer
+# MAGIC ## What This Means for Your Organisation
 # MAGIC
 # MAGIC | Today | With Prompt Registry |
 # MAGIC |-------|---------------------|
