@@ -7,6 +7,9 @@
 # MAGIC %md
 # MAGIC # Prompt Registry for Document Extraction
 # MAGIC
+# MAGIC > **Feature status:** MLflow Prompt Registry is in **Public Preview**.
+# MAGIC > Workspace admins must enable it from the Previews page. Requires Unity Catalog.
+# MAGIC
 # MAGIC **The ask:** Business users want to iterate on extraction prompts
 # MAGIC without a full sprint cycle. The Prompt Registry gives them:
 # MAGIC
@@ -17,7 +20,7 @@
 
 # COMMAND ----------
 
-# MAGIC %pip install mlflow>=3.1 requests
+# MAGIC %pip install "mlflow[databricks]>=3.5" requests
 # MAGIC dbutils.library.restartPython()
 
 # COMMAND ----------
@@ -37,7 +40,7 @@ import requests
 mlflow.set_tracking_uri("databricks")
 mlflow.set_registry_uri("databricks-uc")
 
-PROMPT_NAME = f"{catalog}.{schema}.fund_doc_extractor"
+PROMPT_NAME = f"{catalog}.{schema}.doc_extractor"
 
 # COMMAND ----------
 
